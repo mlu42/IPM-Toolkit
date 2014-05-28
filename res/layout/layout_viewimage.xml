@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Defines the layout for the image viewing activity -->
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/mainLayout"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical">
+    <uk.co.senab.photoview.HackyViewPager
+    android:id="@+id/pager"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:scrollbars="none"
+    android:fadingEdge="none"
+    android:orientation="horizontal"
+    android:clickable="true"/>
+    <ImageView
+    android:id="@+id/hd_image"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:clickable="true"
+    android:visibility="gone"/>
+    <ProgressBar
+    android:id="@+id/progbar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:visibility="gone"
+    style="@android:style/Widget.ProgressBar.Large.Inverse"/>
+    <LinearLayout
+    android:id="@+id/detailspane"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_alignParentBottom="true"
+    android:visibility="gone"
+    android:orientation="vertical">
+        <TextView
+        android:id="@+id/picDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:gravity="center"/>
+        <TextView
+        android:id="@+id/picAuthor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:gravity="center"
+        android:textStyle="italic"/>
+        <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="#66505050"
+        android:padding="10dp">
+            <Button
+            android:id="@+id/HDbutton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="HD"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:onClick="HDButtonClicked"/>
+            <Button
+            android:id="@+id/shareButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Share"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_alignParentRight="true"
+            android:onClick="shareButtonClicked"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

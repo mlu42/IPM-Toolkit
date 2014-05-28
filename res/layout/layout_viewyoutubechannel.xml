@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Represents the layout for a list item that is a YouTube video -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/editTitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit YouTube Channel"
+        android:padding="5dp"
+        android:background="@color/black"/>
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/edit_channelIdLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Channel ID"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/edit_channelId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="uwipm"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"/>
+            android:paddingTop="10dp"/>
+        <Button
+            android:id="@+id/deleteYoutubeChannel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_marginTop="15dp"
+            android:onClick="deleteYoutubeChannel"/>
+    </LinearLayout>
+</LinearLayout>

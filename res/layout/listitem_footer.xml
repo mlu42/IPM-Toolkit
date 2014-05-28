@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Defines the layout for the footer of the Twitter list -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/footer"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="horizontal"
+android:gravity="center">
+    <TextView
+    android:id="@+id/twitter_footer_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Load more tweets"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"/>
+    <ProgressBar
+    android:id="@+id/tweetprogbar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:visibility="gone"
+    style="@android:style/Widget.ProgressBar.Small.Inverse"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Source: https://github.com/erikwt/PullToRefresh-ListView -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- This XML file defines default colors to be used in the app. -->
+    <color name="white">#FFFF</color>								<!-- A simple white -->
+    <color name="black">#F000</color>								<!-- A simple black -->
+    <color name="dark_grey">#444</color>
+    <color name="toggle_selected">#FF333333</color>		<!-- A dark green as found in the Android design guidelines -->
+    <color name="toggle_unselected">#FF888888</color>	<!-- A lighter green as found in the Android design guidelines -->
+    <color name="darker_grey">#222</color>
+    <color name="light_grey">#EEE</color>
+</resources>

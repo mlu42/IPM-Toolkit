@@ -1,0 +1,57 @@
+- Should handle gracefully when not connected to internet (DONE?)
+    - Video tab causing some database problems? (DONE?)
+- Twitter thumbnails and general layout fixing (DONE?)
+- Alternating background colors for lists (DONE?)
+- Less border around video thumbnails? (DONE?)
+- Picture search bar buggyness (DONE?)
+- Handling for case when HD image is not available (DONE?)
+- Implement a cache for images in the video list (DONE?)
+    - Twitter, too (DONE?)
+- Description text in details pan for pictures (DONE?)
+------------------------------------------------------------------------------------------------------------------------
+- No internet connection when searching pictures (DONE?)
+- No internet connection when getting search suggestions (DONE?)
+------------------------------------------------------------------------------------------------------------------------
+- Make default collection not savable and not deletable (DONE?)
+- Refresh button for all lists (implemented as pull-to-refresh) (DONE?)
+------------------------------------------------------------------------------------------------------------------------
+- Make sure screen orientation works in all activities (DONE?)
+- Clean up code (DONE?)
+------------------------------------------------------------------------------------------------------------------------
+IDEAS:
+    - Upload photos directly to database
+    - Multiple pages for news, twitter, etc.
+------------------------------------------------------------------------------------------------------------------------
+- News/Twitter overlaps tabs in layout (DONE?)
+- Videos overlaps spinner in layout (DONE?)
+------------------------------------------------------------------------------------------------------------------------
+- Loading spinner when getting next page of tweets (DONE?)
+- Twitter page not saved between activities (DONE?)
+- Scroll position when updating twitter list (DONE?)
+- Not sure if tweets are being loaded in proper order. (DONE?)
+------------------------------------------------------------------------------------------------------------------------
+Version 1.0 RELEASED
+------------------------------------------------------------------------------------------------------------------------
+UPDATES FOR VERSION 1.1
+    News
+    - Pagination (possible?)
+    Twitter
+    - More extensive layout
+        - Retweets, screen name, etc
+        - Support for "Status" object as opposed to my own homemade "Tweet" object
+    - Async loading of thumbnails (DONE)
+    Videos
+    - Async loading of thumbnails
+    Publications
+    - Pagination (possible?)
+    Pictures
+    - Async picture loading
+
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+

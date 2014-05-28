@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Libraries/Twitter4J/twitter4j-core/twitter4j-core-3.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/editTitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit feed"
+        android:padding="5dp"
+        android:background="@color/black"/>
+    <LinearLayout
+        android:id="@+id/edit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/feed_title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Feed description"
+            android:paddingBottom="10dp"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/feed_title_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter a description"
+            android:maxLength="20"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/feed_url_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Feed URL"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/feed_url"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="http://ipcm.wisc.edu/feed/"
+            android:textColor="#888"
+            android:paddingLeft="10dp"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:id="@+id/button_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/edit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:onClick="update"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_marginLeft="10dp"
+                android:onClick="delete"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

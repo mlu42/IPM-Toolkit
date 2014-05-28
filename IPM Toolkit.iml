@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="UPDATE_PROPERTY_FILES" value="true" />
+        <notImportedProperties>
+          <property>MANIFEST_FILE_PATH</property>
+          <property>RESOURCES_DIR_PATH</property>
+          <property>ASSETS_DIR_PATH</property>
+          <property>NATIVE_LIBS_DIR_PATH</property>
+        </notImportedProperties>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/out/production/IPM Toolkit" />
+    <output-test url="file://$MODULE_DIR$/out/test/IPM Toolkit" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../Libraries/PhotoView/PhotoView-master/library/src/uk/co/senab/photoview">
+      <sourceFolder url="file://$MODULE_DIR$/../../Libraries/PhotoView/PhotoView-master/library/src/uk/co/senab/photoview" isTestSource="false" packagePrefix="uk.co.senab.photoview" />
+    </content>
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/gen" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="libs" level="project" />
+    <orderEntry type="library" name="twitter4j" level="project" />
+    <orderEntry type="library" name="twitter4j (2)" level="project" />
+    <orderEntry type="library" name="google-api-services-youtube-v3-rev73-1.16.0-rc" level="project" />
+  </component>
+</module>
+

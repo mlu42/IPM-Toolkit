@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Add YouTube Channel"
+        android:background="@color/black"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="15dp">
+        <TextView
+            android:id="@+id/channelIdLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YouTube Channel ID"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"/>
+        <EditText
+            android:id="@+id/channelIdInput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter channel ID"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/addYouTubeChannelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add channel"
+            android:onClick="addChannelClicked"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/listBorder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Saved channels"
+        android:background="@color/dark_grey"
+        android:padding="5dp"/>
+    <ListView
+        android:id="@+id/channelList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

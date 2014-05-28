@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Defines the layout for the Publications tab -->
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical">
+	<LinearLayout
+	android:id="@android:id/empty"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/white"
+	android:layout_above="@+id/tabs"
+	android:gravity="center"
+    android:onClick="reloadList"
+	android:orientation="vertical">
+		<ProgressBar
+        android:id="@+id/progbar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		style="@android:style/Widget.ProgressBar.Large.Inverse"/>
+	    <TextView
+		android:id="@+id/empty_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="15dp"
+		android:text="Loading content..."/>
+	</LinearLayout>
+    <ipcm.tool.kit.PullToRefreshListView
+    android:id="@android:id/list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:cacheColorHint="@color/white"/>
+</LinearLayout>

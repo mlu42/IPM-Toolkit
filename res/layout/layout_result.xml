@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Defines the layout for the search result page -->
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/main_layout"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+android:background="@color/white">
+	<LinearLayout
+	android:id="@+id/titlebar"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/black"
+	android:textColor="@color/white"
+	android:padding="5dp"
+	android:weightSum="1">
+		<LinearLayout
+		android:id="@+id/titlebar_left"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@color/black"
+		android:textColor="@color/white"
+		android:padding="5dp"
+		android:orientation="vertical"
+		android:layout_weight="1">
+			<TextView
+			android:id="@+id/title_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textStyle="bold"/>		
+			<TextView
+			android:id="@+id/image_count"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		</LinearLayout>
+		<LinearLayout
+		android:id="@+id/titlebar_right"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center_horizontal"
+		android:layout_weight="0">
+			<Button
+			android:id="@+id/save_collection_button"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Bookmark\ncollection"/>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+	android:id="@android:id/empty"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/white"
+	android:gravity="center"
+	android:orientation="vertical">
+		<ProgressBar
+		android:id="@+id/progbar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		style="@android:style/Widget.ProgressBar.Large.Inverse"/>
+	    <TextView
+		android:id="@+id/empty_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="15dp"
+		android:text="Loading content..."/>
+	</LinearLayout>
+	<ListView
+	android:id="@android:id/list"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:cacheColorHint="@color/white"
+	android:clickable="true"/>
+	<TextView
+	android:id="@+id/no_pics"
+	android:layout_gravity="center"
+	android:gravity="center"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:textColor="@color/black"
+	android:text="No results found."/>
+</LinearLayout>

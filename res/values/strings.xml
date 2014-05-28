@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, IPMToolkitActivity!</string>
+    <string name="app_name">IPM Toolkit</string>
+    <string-array name="video_spinner">
+        <item>All playlists</item>
+        <item>Crop health and fertility</item>
+        <item>Pests and scouting</item>
+        <item>Invasive weeds</item>
+    </string-array>
+    <string name="searchHint">Search images</string>
+    <!-- Values for the pull-to-refresh library -->
+    <!-- Source: https://github.com/erikwt/PullToRefresh-ListView -->
+    <string name="ptr_pull_to_refresh">Pull to refresh</string>
+    <string name="ptr_release_to_refresh">Release to refresh</string>
+    <string name="ptr_refreshing">Refreshing…</string>
+    <string name="ptr_last_updated">Updated: %1$s</string>
+</resources>

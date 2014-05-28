@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Defines the layout for each individual fragment in the ViewPager
+     for photos. In this case, it just consists of an ImageView. -->
+<ImageView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/imageView"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"/>
